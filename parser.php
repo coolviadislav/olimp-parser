@@ -1,10 +1,8 @@
 <?php
-
-include('../lib/simple_html_dom.php');
-
-$pageUrl = "https://olimp-cars.ru/auto";
+	include('../lib/simple_html_dom.php');
 	
-	$html = file_get_html($pageUrl);
+	$html = file_get_html("https://olimp-cars.ru/auto");
+
 	$xml .=sprintf("<?xml version='1.0'?><cars>");
 	foreach ($html->find('.item') as $key => $value) {
 		$name = trim($html->find('.item_name',$key)->plaintext);
