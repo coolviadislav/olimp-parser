@@ -20,4 +20,3 @@ $pageUrl = "https://olimp-cars.ru/auto";
 	$file = 'test.xml';
 	$xml .=sprintf("</cars>");
 	file_put_contents($file, $xml);
-?>
