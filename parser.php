@@ -13,6 +13,8 @@
 		$xml .=sprintf('<price>%s</price>',$prise);
 		$xml .=sprintf('<old_price>%s</old_price>',$oldPrise);
 		$xml .=sprintf('<picture>%s</picture></car>',$img);
+
+		echo sprintf("Спарсили: %s \n", $name);
 	}
 
 	$file = 'test.xml';
